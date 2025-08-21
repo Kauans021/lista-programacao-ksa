@@ -18,6 +18,7 @@ public class Atividade3 {
         System.out.println("a / b = " + resultado);
 
 
+        
         //Testes
         System.out.println("a == b ? " + (a == b));
         System.out.println("a != b ? " + (a != b));
