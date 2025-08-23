@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Atividade7 {
+public class Atividade8 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
         String nome = ""; // variável nome tipo "texto"
@@ -14,6 +14,7 @@ public class Atividade7 {
 
         System.out.println("Seu nome é " + nome);
         System.out.println("Você tem " + idade2 + " anos de idade.");
+
 
         //resposta 1
         System.out.println("Digite sua idade!");
@@ -31,15 +32,18 @@ public class Atividade7 {
         System.out.println("Você e do sexo: ");
         switch (opcao){
             case 'm':
-                System.out.println("Masculino");
-                break;
+              System.out.println("Masculino");
+              break;
             case'f':
-                System.out.println("Feminina");
-                break;
+               System.out.println("Feminina");
+               break;
             default:
-                System.out.println("opção invalida!");
-                break;
+            System.out.println("opção invalida!");
+            break;
         }
+
+
+
 
     }
 }
