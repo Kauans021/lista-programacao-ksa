@@ -23,6 +23,7 @@ public class Atidade29 {
         System.out.println(texto);
         return texto;
     }
+
     public static double potenciacao(double x, int expoente) {
         double resultado = x; // resultado = 2
         for (int n = 0; n < (expoente - 1); n++) {
@@ -31,6 +32,7 @@ public class Atidade29 {
         }
         return resultado;
     }
+
     public static void main(String[] args) {
 
         //Utilizando funções e procedimentos faça:
@@ -52,6 +54,8 @@ public class Atidade29 {
                             "2- Subtração \n" +
                             "3- Multiplicação \n" +
                             "4- Divisão \n" +
+                            "5- Potenciação \n" +
+                            "0- Sair \n"
 
 
             );
@@ -91,7 +95,22 @@ public class Atidade29 {
                     y = leia.nextDouble();
                     historico += printResultado('/', x, y, divisao(x, y));
                     break;
-
+                case 5:
+                    System.out.println("Potênciação: ");
+                    System.out.println("Digite o valor da base:");
+                    x = leia.nextDouble();
+                    System.out.println("Digite do expoente:");
+                    int e = leia.nextInt();
+                    historico += printResultado('^', x, e, potenciacao(x, e));
+                    break;
+                case 0:
+                    System.out.println("Você escolheu sair. \n " +
+                            "Segue abaixo o resumo das operações realizadas.");
+                    System.out.println(historico);
+                    break;
+                default:
+                    System.out.println("Opção não encontrada!");
+                    break;
 
             }
         } while (opcao != 0);
