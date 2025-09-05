@@ -21,19 +21,21 @@ public class Atividade30 {
                 case 'a':
                     System.out.println("Você escolheu a letra A");
                     break;
-                case 'B':
+                case 'b':
                     System.out.println("Você escolheu a letra B");
                     break;
-                case 'C':
+                case 'c':
                     System.out.println("Você escolheu a letra C");
                     break;
-                case 'D':
+                case 'd':
                     System.out.println("Você escolheu a letra D");
 
                     break;
+                default:
+                    System.out.println("Opção inválida");
 
             }
-        }while (opcao != 'x');
+        }while (opcao != 'z');
 
     }
 }

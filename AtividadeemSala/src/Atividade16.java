@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
-
 public class Atividade16 {
+    public static void main(String[] args) {
+        int x= 2;
+        x*=x;
+        System.out.println(x);
+    }
 }
