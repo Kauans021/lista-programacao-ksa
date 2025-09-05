@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Atidade29 {
+public class Atividade29 {
 
     public static double soma(double x, double y) {
         return x + y;
