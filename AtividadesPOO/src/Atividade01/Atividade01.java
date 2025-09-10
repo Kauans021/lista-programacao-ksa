@@ -1,4 +1,0 @@
-package Atividade01;
-
-public class Atividade01 {
-}
