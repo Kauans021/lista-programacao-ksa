@@ -21,6 +21,6 @@ public class Carro extends Veiculo {
         this.portas = portas;
     }
     public void falar(){
-        System.out.println("Marca do veiculo: "+getMarca()+"\nModelo do veiculo: "+getModelo()+" \nVelocidade maxima do veiuclo: "+ getSalarioBase()+"\nDescrição do veiuclo: "+getDescricao()+"\nNumeros de portas: "+getPortas());
+        System.out.println("Marca do veiculo: "+getMarca()+"\nModelo do veiculo: "+getModelo()+" \nVelocidade maxima do veiuclo: "+getVelocidade()+"\nDescrição do veiuclo: "+getDescricao()+"\nNumeros de portas: "+getPortas());
     }
 }
