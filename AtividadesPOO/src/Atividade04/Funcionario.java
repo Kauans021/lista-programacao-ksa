@@ -2,40 +2,41 @@ package Atividade04;
 
 public class Funcionario {
     private String nome;
-    private double SalarioBase;
+    private double salarioBase;
 
     public Funcionario() {
-        this.nome = nome;
-        this.SalarioBase = 0;
+        this.nome = "";
+        this.salarioBase = 1200.0;
     }
 
-    public Funcionario(String nome, double SalarioBase) {
+    public Funcionario(String nome) {
         this.nome = nome;
-        this.SalarioBase = SalarioBase;
+        this.salarioBase = 1200.0;
     }
+
 
     public String getNome() {
         return this.nome;
     }
 
-    public void setnome(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
     public double getSalarioBase() {
-        return SalarioBase;
+        return this.salarioBase;
     }
 
     public void setSalarioBase(double salarioBase) {
-        this.SalarioBase = salarioBase;
+        this.salarioBase = salarioBase;
     }
 
-    public double getcalculoPagamento() {
-        return SalarioBase;
+    public double getcalcularPagamento() {
+        return salarioBase;
     }
 
-    public void setcalculoPagamento(double salarioBase) {
-        this.SalarioBase = SalarioBase ;
+    public void setcalcularPagamento(double salarioBase) {
+        this.salarioBase = salarioBase;
     }
 
 }

@@ -5,22 +5,26 @@ public class Vendedor extends Funcionario {
 
     public Vendedor() {
         super();
-        this.comissao=0;
+        this.comissao = 0;
     }
 
-    public Carro(String nome, double SalarioBase, double comissao){
-        super(nome, SalarioBase);
-        this.comissao=comissao;
+    public Vendedor(String nome) {
+        super(nome);
     }
 
 
-    public int getPortas() {
-        return portas;
+    public double getComissao() {
+        return this.comissao;
     }
-    public void setPortas(int portas) {
-        this.portas = portas;
+
+    public void setComissao(double comissao) {
+        this.comissao = comissao;
     }
-    public void falar(){
-        System.out.println("Marca do veiculo: "+getMarca()+"\nModelo do veiculo: "+getModelo()+" \nVelocidade maxima do veiuclo: "+ getSalarioBase()+"\nDescrição do veiuclo: "+getDescricao()+"\nNumeros de portas: "+getPortas());
+
+    @Override
+    public double getcalcularPagamento() {
+        final double salarioBase = super.getSalarioBase();
+        return salarioBase+this.comissao;
     }
+
 }
