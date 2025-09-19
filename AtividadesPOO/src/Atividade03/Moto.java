@@ -5,11 +5,7 @@ public class Moto extends Veiculo {
 
     public Moto() {
         super();
-        this.cilindradas = 110;
-        this.setMarca(getMarca());
-        this.setModelo(getModelo());
-        this.setSalarioBase(getSalarioBase());
-        this.setDescricao(getDescricao());
+        this.cilindradas = 125;
     }
 
     public Moto(String marca, String modelo, double velocidade, String descricao, int cilindradas) {
@@ -28,18 +24,16 @@ public class Moto extends Veiculo {
 
     @Override
     public void setMarca(String marca) {
-
         super.setMarca(marca);
     }
 
     public void setModelo(String modelo) {
-
         super.setModelo(modelo);
     }
 
-    public void setSalarioBase(double salarioBase) {
+    public void setVelocidade(double velocidade) {
 
-        super.setSalarioBase(salarioBase);
+        super.setVelocidade(velocidade);
     }
 
     public void setDescricao(String descricao) {
@@ -47,6 +41,7 @@ public class Moto extends Veiculo {
     }
 
     public void falar() {
-        System.out.println("Marca do veiculo: " + getMarca() + "\nModelo do veiculo: " + getModelo() + " \nVelocidade maxima do veiuclo: " + getSalarioBase() + "\nDescrição do veiuclo: " + getDescricao() + "\nCilindradas: " + getCilindradas());
+        System.out.println("Marca do veiculo: " + getMarca() + "\nModelo do veiculo: " + getModelo() + " \nVelocidade maxima do veiuclo: " + getVelocidade() + "\nDescrição do veiuclo: " + getDescricao() + "\nCilindradas: " + getCilindradas());
     }
 }
+
